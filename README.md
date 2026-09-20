@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 30/07/2026
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +26,33 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() { 
+    int i = 10;
+    float f = 3.14;
+    char c = 'A';
+    char s[] = "Hello C";
+
+    printf("Integer literal: %d\n", i);
+    printf("Size of integer: %zu bytes\n\n", sizeof(i));
+
+    printf("Float literal: %.2f\n", f);
+    printf("Size of float: %zu bytes\n\n", sizeof(f));
+
+    printf("Character literal: %c\n", c);
+    printf("Size of character: %zu bytes\n\n", sizeof(c));
+
+    printf("String literal: %s\n", s);
+    printf("Size of string: %zu bytes\n", sizeof(s));
+
+return 0;
+}
+```
 # Output:
+<img width="1636" height="711" alt="image" src="https://github.com/user-attachments/assets/a858e206-e4ac-4cda-ae71-981e10a0e93b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -35,7 +61,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
+# Date : 30/07/2026
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -57,7 +83,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() { 
+    const int DAYS = 7; 
+
+    printf("Value of PI (macro constant): %.5f\n", PI);
+    printf("Value of DAYS (constant variable): %d\n", DAYS);
+
+return 0;
+}
+```
 # Output:
+<img width="1632" height="678" alt="image" src="https://github.com/user-attachments/assets/239e15dd-46e1-4e22-a0a6-c436572ff1d7" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -66,7 +106,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:3
   Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 
+# Date : 30/07/2026
 # Aim:
   To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
 # Algorithm:
@@ -81,14 +121,35 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int num = 25;
+    float f = 3.5f;
+    double d = 98.765432;
+    char ch = 'C';
+
+    printf("Integer value: %d\n", num);
+    printf("Float value: %.2f\n", f);
+    printf("Double value: %.6lf\n", d);
+    printf("Character value: %c\n", ch);
+
+return 0;
+}
+```
 # Output:
+<img width="1533" height="599" alt="image" src="https://github.com/user-attachments/assets/ad81598e-d83f-4218-88c1-90287765a5b2" />
+
 # Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
   Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 
+# Date : 30/07/2026
 # Aim:
   To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
 # Algorithm:
@@ -120,7 +181,43 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+   int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Sum (a + b) = %d\n", a + b);
+    printf("Difference (a - b) = %d\n", a - b);
+    printf("Product (a * b) = %d\n", a * b);
+
+    if (b != 0) {
+        printf("Quotient (a / b) = %d\n", a / b);
+        printf("Remainder (a %% b) = %d\n", a % b);
+    }
+    else {
+        printf("Quotient and Remainder cannot be calculated (division by zero)\n");
+    }
+
+    printf("\nBitwise Operations:\n");
+    printf("AND (a & b) = %d\n", a & b);
+    printf("OR (a | b) = %d\n", a | b);
+    printf("XOR (a ^ b) = %d\n", a ^ b);
+    printf("Left Shift (a << b) = %d\n", a << b);
+    printf("Right Shift (a >> b) = %d\n", a >> b);
+    printf("Bitwise NOT of a (~a) = %d\n", ~a);
+    printf("Bitwise NOT of b (~b) = %d\n", ~b);
+
+return 0;
+}
+```
 # Output:
+<img width="1525" height="697" alt="image" src="https://github.com/user-attachments/assets/1b4c4341-b07c-4bf9-ba2e-22b44f2b4b47" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -129,7 +226,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-1- Module 1 - FoC
 # Ex.No:5
   Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 
+# Date : 30/07/2026
 # Aim:
   To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
 # Algorithm:
@@ -165,7 +262,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+          ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') ?
+            printf("Vowel") :
+            printf("Consonant")) :
+
+    printf("Special Symbol");
+
+return 0;
+}
+```
 # Output:
+<img width="1626" height="637" alt="image" src="https://github.com/user-attachments/assets/30a25e32-9a5b-42d2-b8a9-db6542cba5ad" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
